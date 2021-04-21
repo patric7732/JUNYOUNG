@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display+SC&display=swap');
+
+
+
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-family: 'Bebas Neue';
+}
+
+header {
+margin: auto;
+overflow: hidden;
+height: 130px;
+}
+
+@media( max-width:760px){
+    body{
+        margin:0;
+        padding:0;
+    };
+    .show1 {
+        position: static;
+        text-align: center;
+    }
+
+}
+.logo{
+    position:absolute;
+    margin: 2% 10%;
+    } 
+
+ul {
+    text-align: right;
+    padding: 100px;
+    margin: 0 70px;
+
+}
+header a {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+header a:hover {
+    font-weight: bold;
+    color:white;
+}
+header li {
+    display: inline;
+    margin: 1%;
+}
+
+
+.show1 h1{
+    text-align: right;
+    margin: 0 0;
+    padding: 0px 10%;
+    font-size:40px;
+}
+.show1 h2{
+    text-align: right;
+    margin: 0 10%;
+    font-size: 30px;
+}
+
+.inner{
+    margin: 0% 0%;
+}
+.box1 img{
+    padding: 3% 41%;
+}
+.box2{
+    float: left;
+    padding-left: 20%;
+}
+.inner3{
+    padding-left: 47%;
+    font-size: 35px;
+}
+
+#name p{
+    padding: 0% 5%;
+    letter-spacing: 5px;
+    font-size:25px;
+}
+#name2{
+    padding: 0px 5%;
+    font-size:18px;
+}
+
+#name3 p{
+    padding: 0 20%;
+    letter-spacing: 5px;
+    font-size:25px;
+}
+#name4{
+    padding: 0% 20%;
+    margin: 0;
+    font-size:18px;
+}
+
