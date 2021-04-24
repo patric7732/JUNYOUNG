@@ -477,10 +477,18 @@ header li {
 
 @media screen and (max-width: 562px){
   ul{
-    padding-top: 70px;
+    padding-top: 0px;
     margin-right: 0;
     padding-right: 0;
     transition: all .35s;
+  }
+  .logo{
+    position: unset;
+    text-align: center;
+    margin: 0;
+  }
+  .logo img{
+    width: 50px;
   }
 }
 
