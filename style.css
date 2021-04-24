@@ -13,21 +13,10 @@ body{
 
 header {
 margin: auto;
-overflow: hidden;
 height: 130px;
 }
 
-@media( max-width:760px){
-    body{
-        margin:0;
-        padding:0;
-    };
-    .show1 {
-        position: static;
-        text-align: center;
-    }
 
-}
 .logo{
     position:absolute;
     margin: 2% 10%;
@@ -37,7 +26,8 @@ ul {
     text-align: right;
     padding: 100px;
     margin: 0 70px;
-
+    padding-left: 0;
+    margin-left: 0;
 }
 header a {
     color: gray;
@@ -53,6 +43,9 @@ header li {
     display: inline;
     margin: 1%;
 }
+.header, .current a{
+    color: white;
+}
 
 
 .show1 h1{
@@ -64,21 +57,26 @@ header li {
 .show1 h2{
     text-align: right;
     margin: 0 10%;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .inner{
     margin: 0% 0%;
 }
 .box1 img{
-    padding: 3% 41%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
 .box2{
     float: left;
-    padding-left: 20%;
+    padding-left: 21%;
+}
+.box2 img{
+  width: 400px;
 }
 .inner3{
-    padding-left: 47%;
+    padding-left: 48%;
     font-size: 35px;
 }
 
@@ -103,3 +101,410 @@ header li {
     font-size:18px;
 }
 
+
+#slider {
+    position: relative;
+    width: 40%;
+    height: 18vw;
+    margin: 80px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+  
+  
+  input[type=radio] {
+    width: 0px;
+  }
+  
+  
+  input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+  }
+  
+  input[type=radio]:checked {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  #slider label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+  
+  #slide1 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #slide2 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #slide3 img{
+    width: 100%;
+    height: 100%;
+  }
+  #slide3 img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  #slide4 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #slide5 img{
+    width: 100%;
+      height: 100%;
+  }
+  
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+  
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+  
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(30%, 0, -250px);
+  }
+  
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(-30%, 0, -250px);
+  }
+  
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+  
+.int1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+  .introduce{
+  margin: 0 15%;
+}
+
+.jeon{
+  margin: 5% 0%;
+  padding:60px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.jeon1 {
+  padding-top: 10px;
+}
+
+.jeon p{
+   font-size: 25px;
+   margin: 10px;
+  }
+
+.jeon img{
+      float:left;
+      padding-right: 50px;
+}
+
+.jung{
+  padding:60px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.jung1 {
+  padding-top: 10px;
+  margin-left: 100px;
+}
+
+.jung p{
+   font-size: 25px;
+   margin: 10px;
+  }
+
+.jung img{
+      float:right;
+      padding-left: 0px;
+}
+
+.choi{
+  margin: 5% 0%;
+  padding:60px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.choi1 {
+  padding-top: 10px;
+}
+
+.choi p{
+   font-size: 25px;
+   margin: 10px;
+  }
+
+.choi img{
+      float:left;
+      padding-right: 50px;
+}
+.kimj{
+  padding:60px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.kimj1 {
+  padding-top: 10px;
+  margin-left: 100px;
+}
+
+.kimj p{
+   font-size: 25px;
+   margin: 10px;
+  }
+
+.kimj img{
+      float:right;
+      padding-left: 0px;
+}
+
+.kimc{
+  margin: 5% 0%;
+  padding:60px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.kimc1 {
+  padding-top: 10px;
+}
+
+.kimc p{
+   font-size: 25px;
+   margin: 10px;
+  }
+
+.kimc img{
+      float:left;
+      padding-right: 50px;
+}
+.lan{
+  text-align: center;
+  font-size: 30px;
+}
+
+.tiles {
+  position: absolute;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tiles .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+.tiles .tile:before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+.tiles .tile img {
+  display: block;
+  width: 200px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.tiles .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.tiles .tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.tiles .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 15px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+}
+.tiles .tile:focus:before,
+.tiles .tile:focus span, .tiles .tile:hover:before,
+.tiles .tile:hover span {
+  opacity: 1;
+}
+.tiles .tile:focus:before, .tiles .tile:hover:before {
+  top: 50%;
+}
+.tiles .tile:focus span, .tiles .tile:hover span {
+  top: 0;
+}
+.tiles .tile:focus .title, .tiles .tile:hover .title {
+  transition-delay: 0.15s;
+}
+.tiles .tile:focus .info, .tiles .tile:hover .info {
+  transition-delay: 0.25s;
+}
+.team{
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+.team img{
+ width: 100%;
+}
+@media screen and (max-width: 1250px){
+  .jeon img{
+    float:none;
+  }
+  .jung img{
+    float:none;
+}
+  .jung1{
+    margin:0;
+    word-break: keep-all;
+  }
+  .choi img{
+    float:none;
+  }
+  .kimj img{
+    float:none;
+}
+  .kimj1{
+    margin:0;
+    word-break: keep-all;
+  }
+  .kimc img{
+    float:none;
+  }
+}
+@media screen and (max-width: 980px){
+  .box2{
+    padding-left: 15px;
+  }
+  .tiles{
+    width: 60%;
+    }
+  .team{
+    margin-top: 200px;
+  }
+
+}
+
+@media screen and (max-width: 843px){
+  .inner3{
+    float:left;
+    padding-left: 20px; 
+  }
+  .team{
+    margin-top: 430px;
+  }
+}
+  
+@media screen and (max-width: 570px){
+    .jeon{
+      padding-left: 5px;
+    }
+    .jung{
+      padding-left: 5px;
+    }
+    .choi{
+      padding-left: 5px;
+    }
+    .kimj{
+      padding-left: 5px;
+    }
+    .kimc{
+      padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 562px){
+  ul{
+    padding-top: 70px;
+    margin-right: 0;
+    padding-right: 0;
+    transition: all .35s;
+  }
+}
+
+@media screen and (max-width: 392px){
+  ul{
+    padding-top: 0px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .logo{
+    position: unset;
+    text-align: center;
+    margin: 0;
+  }
+  .logo img{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .box2{
+    padding-left: 20px;
+  }
+  .box2 img{
+    width: 98%;
+  }
+}
